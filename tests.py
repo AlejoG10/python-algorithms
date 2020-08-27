@@ -13,5 +13,9 @@ class Test(unittest.TestCase):
 		bubble_sort( self.setup1 )
 		self.assertTrue( self.setup1 == [ 0, 1, 2, 3, 4, 5 ] )
 
+	def test_selection(self):
+		selection_sort( self.setup1 )
+		self.assertTrue( self.setup1 == [ 0, 1, 2, 3, 4, 5 ] )
+
 if __name__ == '__main__':
 	unittest.main()
